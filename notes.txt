@@ -1,0 +1,10 @@
+1) Installing globally = npm i packageName -globally
+2) As a dependency: npm i packageName
+3) As a devDependency: npm i packageName -D
+
+
+Event Loop -> Event loop allows nodejs to perform non-blocking I/O operations, despite JS being a single threaded language.
+                (https://www.youtube.com/watch?v=PNa9OMajw9w)
+Async pattern
+Event emitter
+Stream 
