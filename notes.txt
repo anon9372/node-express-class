@@ -5,6 +5,15 @@
 
 Event Loop -> Event loop allows nodejs to perform non-blocking I/O operations, despite JS being a single threaded language.
                 (https://www.youtube.com/watch?v=PNa9OMajw9w)
-Async pattern
-Event emitter
-Stream 
+
+Async pattern - Blocking Code
+Async Pattern - Setup Promises 
+Async Pattern - Refactor to Async
+Event emitter - What is Event emitter?  -- > Event emitter is a module that helps in communicating with node objects, just like events that we trigger in a browser environment.
+
+handleClick = (e) => {
+e.target.value()
+}
+<button onClick={handleClick}>Click Here</button>
+
+Event emitter - Code.
