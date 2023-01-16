@@ -17,3 +17,16 @@ e.target.value()
 <button onClick={handleClick}>Click Here</button>
 
 Event emitter - Code.
+
+
+====================================================
+TCP AND UDP Protocols
+
+Streams: 
+
+1) Writeable -> Used to write data sequentially
+2) Readable -> Used to read data sequentially
+3) Duplex -> Used to do both of the above
+4) Transform -> Modifying data when reading or writing
+
+Stream breaks a file into pieces of smaller files each with default size of around 65kb
