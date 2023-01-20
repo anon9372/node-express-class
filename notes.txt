@@ -30,3 +30,21 @@ Streams:
 4) Transform -> Modifying data when reading or writing
 
 Stream breaks a file into pieces of smaller files each with default size of around 65kb
+
+
+
+
+// ================ EXPRESS ====================== //
+
+
+API vs SSR 
+
+API => Application Programming Interface
+        - JSON
+        - Send the 'Data'
+        - res.json()
+
+SSR => Server Side Rendering
+        - Template
+        - Send the 'Template'
+        - res.render()

@@ -10,8 +10,8 @@ const myFilesPath = path.join('/content', 'subfolder', 'demo.txt')
 
 // access the name of the file
 const baseName = path.basename(myFilesPath)
-// console.log('baseName', baseName) 
+console.log('baseName', baseName)
 
 // method to find the absolute path
-const absolutePath = path.resolve(__dirname, 'content', 'subfolder', 'demo.txt')
-console.log('absolutePath', absolutePath)
+// const absolutePath = path.resolve(__dirname, 'content', 'subfolder', 'demo.txt')
+// console.log('absolutePath', absolutePath)
