@@ -1,0 +1,68 @@
+NODE JS ASSIGNMENT
+
+
+What is NodeJS and how does it differ from a conventional browser environment?
+What are the commands to install a npm package Globally and to install a package for the development environment?
+Ans: npm i -g and npm i -dev
+What is an Event Loop?
+Ans: Event loop allows nodejs to perform non-blocking I/O operations, despite JS being a single threaded language.
+
+What are global variables and modules in NodeJS?
+Ans: Modules are basically files in NodeJS. 
+What are the different types of modules and explain in one line what manually created modules are with an example in VS Code.
+	Ans: 1. Manually Created Module 2. In-built module 3. External Module
+
+What ‘In-built’ module is used to get the information about the user and user PC info?
+	Ans: OS Module
+
+What is ‘fs’? 
+	Ans: File System
+
+What is the difference between readFileSync, writeFileSync and readFile, writeFile?
+
+Write code to make use of ‘fs’ to create a file and read a file in the directory?
+
+ What is HTTP Module?
+
+Create a Server using HTTP Module and console log the message: “Welcome to Achievers IT”.
+
+What is the command to create a package.json file?
+	Ans: npm init -y
+
+What is the difference between package.json and package-lock.json file?
+
+What are callback functions? Explain with examples.
+	Ans: A function passed to another function as an argument and invoked inside the parent function.
+
+What are event emitters? Explain with examples.
+Ans: Event emitters are used to trigger events
+What are Streams? How are streams helpful in accessing bigger files? Explain with an example?
+	Ans: 
+
+1) Writeable -> Used to write data sequentially
+2) Readable -> Used to read data sequentially
+3) Duplex -> Used to do both of the above
+4) Transform -> Modifying data when reading or writing
+
+Stream breaks a file into pieces of smaller files each with default size of around 65kb
+
+What are ExpressJS and advantages over NodeJSr?
+Ans: It is a framework built on top of Node js to build back end web applications using RESTful API.
+
+
+Create an ExpressJS server, with at least 3 routes and status responses?
+What is the difference between API and SSR?
+Ans: 
+API => Application Programming Interface
+        - JSON
+        - Send the 'Data'
+        - res.json()
+
+SSR => Server Side Rendering
+        - Template
+        - Send the 'Template'
+        - res.render()
+
+What is the name of the tool used to check APIs?
+Ans: POSTMAN
+

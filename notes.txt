@@ -6,15 +6,24 @@
 Event Loop -> Event loop allows nodejs to perform non-blocking I/O operations, despite JS being a single threaded language.
                 (https://www.youtube.com/watch?v=PNa9OMajw9w)
 
+Global Variables:
+// GLOBALS  - NO WINDOW !!!!
+
+// __dirname  - path to current directory
+// __filename - file name
+// require    - function to use modules (CommonJS)
+// module     - info about current module (file)
+// process    - info about env where the program is being executed
+
 Async pattern - Blocking Code
 Async Pattern - Setup Promises 
 Async Pattern - Refactor to Async
 Event emitter - What is Event emitter?  -- > Event emitter is a module that helps in communicating with node objects, just like events that we trigger in a browser environment.
 
-handleClick = (e) => {
-e.target.value()
-}
-<button onClick={handleClick}>Click Here</button>
+Steps to create a server in NodeJS using HTTP Module:
+1) Import or require HTTP Module
+2) Create a server and within that create routes.
+3) Start the server
 
 Event emitter - Code.
 
