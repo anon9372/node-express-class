@@ -57,3 +57,43 @@ SSR => Server Side Rendering
         - Template
         - Send the 'Template'
         - res.render()
+
+
+Params and Queries 
+
+Params: Params means parameters
+        Used to dynamically access items through APIs
+
+
+
+================================ MIDDLEWARE ================================
+app.get('/',middleware, (req, res) => {
+=== some actions with req and res ===
+
+next()
+})
+
+
+Middleware takes in the req and performes certain actions on it and the gives out the response.
+
+app.use => Mounts the specified middleware function or functions at the specified path: the middleware function is executed when the base of the requested path matches path.
+
+
+Middleware:
+ 1. Manually Created ---- Done
+ 2. Express ---- Done
+ 3. Third Party middleware
+
+JWT -> JSON WEB TOKEN
+
+===========
+
+1st feb - Middleware
+2nd and 3rd - Method
+
+for the next week
+1 project: Contacts manager
+2 project : Store API
+
+Mongo and Mongoose
+
