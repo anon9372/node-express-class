@@ -28,7 +28,6 @@ app.post('/login', (req, res) => {
 
 // POST JS
 app.post('/api/people', (req, res) => {
-    console.log('hello Name', req.body)
     const { name } = req.body
     if (!name) {
         return res
