@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "name": "taskmanager-express",
+      "path": "../taskmanager-express"
+    },
+    {
+      "name": "node-express-class",
+      "path": "."
+    }
+  ],
+  "settings": {}
+}

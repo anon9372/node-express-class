@@ -101,8 +101,32 @@ DRY -> Don't Repeat Yourself
 2nd and 3rd - Method
 
 for the next week
-1 project: Contacts manager
-2 project : Store API
+1 project: Task manager
+2 project : Contacts Manager
 
-Mongo and Mongoose
+============================= Mongo and Mongoose =============================
 
+There are 2 types of database: SQL and NoSQL
+1) Structured Query language -> PostgreSQL 
+        Rigid
+
+2) No SQL --> Non Relations -> Mongodb or dynomodb 
+
+        Store the data in the following way:
+         1) Column oriented
+         2) Key-value stores
+         3) Document Stores 
+         4) Graphs Database
+
+        Dynamic
+
+IBM Difference between SQL and NoSQL: https://www.ibm.com/cloud/blog/sql-vs-nosql#:~:text=These%20databases%20are%20commonly%20called,row%20transactions%20or%20unstructured%20data.
+
+
+
+Setting up a Mongo DB server: 
+
+1) Create a cloud db with Mongo Atlas
+2) Connecting the db using nodejs and Mongoose middleware 
+3) Create Models (schema) from our data using Mongoose 
+4) Expose the apis created to perform our db operations.
