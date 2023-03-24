@@ -17,3 +17,18 @@ http.createServer((req, res) => {
     // })
 
 }).listen(6900)
+
+
+/// HTTP EXAMPLE
+
+const { createReadStream } = require('fs')
+const stream = createReadStream('./content/big.txt')
+I
+// default 64kb
+// last buffer - remainder
+// highWaterMark - control size
+// const stream = createReadStream('./content/big.txt', { highWaterMark: 90000 }) controls the size of the file chunk
+// const stream = createReadStream('../content/big.txt', { encoding: 'utf8' })
+stream.on('data', (result) => { console.log(result) })
+
+stream.on('error', (err) => console.log(err))

@@ -21,6 +21,26 @@ const { products, people } = require('./data')
 //     res.send(products)
 // })
 
+// app.get('/api/v1/products', (req, res) => {
+
+//     const newProducts = products.map((product) => {
+//         const { id, name, image } = product
+//         return { id, name, image }
+//     })
+
+//     res.status(200).json(newProducts)
+//     res.send(products)
+// })
+
+// app.get('/api/v1/products/1', (req, res) => {
+
+//     const singleProduct = products.find((product) => product.id === 1)
+//     // console.log('productId', productId) 
+
+//      res.json(singleProduct)
+// })
+
+
 // app.get('/api/v1/products/:productId', (req, res) => {
 //     const { productId } = req.params
 
@@ -35,6 +55,7 @@ const { products, people } = require('./data')
 //     }
 // })
 
+// COMPLEX PARAMS
 // app.get('/api/products/:productId/reviews/:reviewId', (req, res) => {
 //     console.log(req.params)
 //     res.send('Hello Products')
@@ -88,7 +109,9 @@ app.get('/api/v1/products', (req, res) => {
     }
 
     if (sortedData.length < 1) {
-        return res.status(200).send("There are no products with your search")
+        // return res.status(200).send("There are no products with your search")
+        // or add return to remove the header error in terminal
+        return res.status(200).json({ sucess: true, data: [] })
     }
 
     res.status(200).json(sortedData)

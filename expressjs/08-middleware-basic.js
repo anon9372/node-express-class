@@ -5,7 +5,9 @@ const logger = require('./logger')
 const authorize = require('./authorize')
 
 app.use([authorize, logger])
-// if we want to use the middleware specifically in a particular route then we do not use app.use, we just
+// MW are function that are executed during the req of the server, each MW has its own req and res
+// ie: req > MiddleWare > res
+// if we want to use the middleware specifically in a particular route then we do not use app.use, we just and also we can use app.use('/api', logger) 1st arg define the common route path 
 // pass the middleware to the app.get as a argument.
 
 app.get('/', (req, res) => {

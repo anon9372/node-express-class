@@ -15,6 +15,42 @@ Global Variables:
 // module     - info about current module (file)
 // process    - info about env where the program is being executed
 
+======================================================================================================
+
+NPM
+// npm - global command, comes with node
+// npm --version
+// local dependency - use it only in this particular project
+// npm 1 <packageName>
+// install onnly for devDep:  npm i lodash --save-dev
+
+// package.json - manifest file (stores important info about project/package)
+// manual approach (create package.json in the root, create properties etc)
+// npm init (step by step, press enter to skip)
+// npm init -y (everything default)
+
+
+const = require('lodash')
+const items = [1, [2, [3, [4]]]]
+const newItems = _.flattenDeep(items)
+console.log(newItems)
+
+// sharing code -> .gitignore 
+// uninstall npm 
+
+// global dependency - use it in any project
+// npm install -g <packageName>
+// sudo install -g <packageName> (mac)
+
+
+NEXT TOPICS
+
+EVENT LOOP, ASYNC PATTERNS, EVENTS EMITTER AND STREAMS
+MAIN CONCEPTS
+PRE-BUILT CODE
+
+============================================================================================================
+
 Async pattern - Blocking Code
 Async Pattern - Setup Promises 
 Async Pattern - Refactor to Async
@@ -39,6 +75,15 @@ Streams:
 4) Transform -> Modifying data when reading or writing
 
 Stream breaks a file into pieces of smaller files each with default size of around 65kb
+
+
+EVENT EMITTERS:
+In Node.js, an event emitter is a core module that allows developers to create and handle custom events. It is a fundamental building block for developing event-driven applications in Node.js.
+
+The event emitter module provides a class called EventEmitter that can be extended to create custom event emitters. The EventEmitter class provides several methods, including on(), emit(), and once(), that allow you to register listeners for events and trigger events
+
+Event emitters are used extensively in Node.js applications, including web servers, database connections, and other types of I/O operations. They allow developers to write asynchronous, non-blocking code that can handle multiple events at the same time.
+
 
 
 
@@ -130,3 +175,4 @@ Setting up a Mongo DB server:
 2) Connecting the db using nodejs and Mongoose middleware 
 3) Create Models (schema) from our data using Mongoose 
 4) Expose the apis created to perform our db operations.
+
